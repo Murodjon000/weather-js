@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+      to right,
+      rgba(67, 66, 66, 0.5),
+      rgba(200, 200, 200, 0.5),
+      rgba(67, 66, 66, 0.5)
+    ),
+    url("./cloud.png");
+  font-family: "B612", sans-serif;
+}
+
+.city-search {
+  width: 470px;
+  height: 30px;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+}
+
+.icon-weather {
+}
+
+.weather-card {
+  background-image: url("./rainy-day.jpg");
+  width: 470px;
+  height: 430px;
+  opacity: 0.8;
+  z-index: 999999;
+  position: relative;
+  background: linear-gradient(
+    to top,
+    rgba(67, 66, 66, 0.5),
+    rgba(200, 200, 200, 0.5),
+    rgba(67, 66, 66, 0.5)
+  );
+}
