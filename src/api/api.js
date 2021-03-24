@@ -1,6 +1,6 @@
 const units = 'metric';
 const weather = 'weather';
-const apiKey = process.env.APIKEY;
+const apiKey = 'f58a5dabce15f90651f48675d3fccb22';
 
 const fetchWeather = async (city) => {
   const baseUrl = `https://api.openweathermap.org/data/2.5/${weather}`;
