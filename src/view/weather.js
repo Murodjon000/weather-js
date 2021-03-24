@@ -34,10 +34,9 @@ const currentCityTime = (timezone) => {
   return foreignTime;
 };
 const button = document.createElement('button');
-const weatherUpdate = (data, units) => {
+const weatherUpdate = async (data, units) => {
   const { name, timezone } = data;
-  const { description } = data.weather[0];
-  const { icon } = data.weather[0];
+  const { description, main, icon } = data.weather[0];
   const { speed } = data.wind;
   const { humidity, pressure } = data.main;
   let { temp } = data.main;
@@ -55,7 +54,7 @@ const weatherUpdate = (data, units) => {
   humadityMes.innerHTML = '%';
   pressureTitle.innerHTML = 'Pressure';
   pressureMes.innerHTML = 'hPa';
-
+  document.querySelector('body').style.backgroundImage = `url('https://source.unsplash.com/1600x900/?${main}')`;
   changeBox.appendChild(button);
   const classes = ['btn', 'btn-outline-warning', 'px-3', 'mr-2', 'mt-2'];
   button.classList.add(...classes);
