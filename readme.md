@@ -14,12 +14,22 @@ You should change the look of the page based on the data, maybe by changing the 
 
 -[live-version](https://weather-app-murod.netlify.app/)
 
+## Built with
+
+- Javascript
+- Webpack
+- HTML
+- Css
+- Bootstrap
+- API
+
 ## Getting Started
 
 - Clone the repo `git@github.com:Murodjon000/weather-js.git`
 - cd `into` the project
 - Run `git pull origin app`
-- On the terminal open up the live server, while in the 'Weather' directory:
+- Run `yarn install` or `npm install` to install dependencies
+- On the terminal run `npm run start` open up the live server
 
 ## Author
 
