@@ -16,10 +16,10 @@ You should change the look of the page based on the data, maybe by changing the 
 
 ## Built with
 
-- Javascript
+- JavaScript
 - Webpack
 - HTML
-- Css
+- CSS
 - Bootstrap
 - API
 
