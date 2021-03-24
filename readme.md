@@ -12,7 +12,7 @@ You should change the look of the page based on the data, maybe by changing the 
 
 ## Live Demo
 
--[live-version](https://uzbek-kitchen.netlify.app/)
+-[live-version](https://weather-app-murod.netlify.app/)
 
 ## Getting Started
 
