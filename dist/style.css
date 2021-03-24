@@ -21,9 +21,6 @@ body {
   outline: none;
 }
 
-.icon-weather {
-}
-
 .weather-card {
   background-image: url("./rainy-day.jpg");
   width: 470px;
