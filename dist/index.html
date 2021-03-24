@@ -22,7 +22,7 @@
       <div
         class="search-box d-flex flex-column justify-content-center align-items-center my-4"
       >
-        <div class="card-box">
+        <div class="card-box" id="hideAll">
           <form id="form" class="">
             <input
               type="search"
@@ -34,12 +34,8 @@
             <p class="error-text text-danger my-2"></p>
           </form>
           <div class="weather-wrapper">
-            <div class="weather-card text-white">
-              <div class="d-flex justify-content-end mb-0">
-                <button
-                  class="btn btn-outline-warning px-3 mr-2 mt-2 temp-change-btn"
-                ></button>
-              </div>
+            <div class="weather-card text-white shadow-lg">
+              <div class="d-flex justify-content-end mb-0 change-box"></div>
               <div class="pb-3 px-3">
                 <div class="mb-4 d-flex justify-content-between">
                   <div class="d-flex flex-column">
@@ -54,48 +50,21 @@
                 ></h2>
                 <div class="d-flex p-4 justify-content-between condation-box">
                   <div class="text-center mx-3">
-                    <h4 class="wind">Wind</h4>
+                    <h4 class="wind-title"></h4>
                     <h3 class="font-weight-bolder wind-speed"></h3>
-                    <h4>M/S</h4>
+                    <h4 class="wind-mes"></h4>
                   </div>
                   <div class="text-center mx-3">
-                    <h4 class="">Humadity</h4>
+                    <h4 class="humadity-title"></h4>
                     <h3 class="font-weight-bolder humadity"></h3>
-                    <h4>%</h4>
+                    <h4 class="humadity-mes"></h4>
                   </div>
                   <div class="text-center">
-                    <h4 class="">Pressure</h4>
+                    <h4 class="pressure-title"></h4>
                     <h3 class="font-weight-bolder pressure"></h3>
-                    <h4>hPa</h4>
+                    <h4 class="pressure-mes"></h4>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="d-flex bg-white">
-              <div class="d-flex flex-column py-3 px-4 border-right">
-                <span class="mb-0 text-center">Today</span>
-                <span class="my-2 text-center"><i class="bx bxs-sun"></i></span>
-                <span class="text-center">7</span>
-              </div>
-              <div class="d-flex flex-column py-3 px-4 border-right">
-                <span class="mb-0 text-center">Today</span>
-                <span class="my-2 text-center"><i class="bx bxs-sun"></i></span>
-                <span class="text-center">7</span>
-              </div>
-              <div class="d-flex flex-column py-3 px-4 border-right">
-                <span class="mb-0 text-center">Today</span>
-                <span class="my-2 text-center"><i class="bx bxs-sun"></i></span>
-                <span class="text-center">7</span>
-              </div>
-              <div class="d-flex flex-column py-3 px-4 border-right">
-                <span class="mb-0 text-center">Today</span>
-                <span class="my-2 text-center"><i class="bx bxs-sun"></i></span>
-                <span class="text-center">7</span>
-              </div>
-              <div class="d-flex flex-column py-3 px-4 border-right">
-                <span class="mb-0 text-center">Today</span>
-                <span class="my-2 text-center"><i class="bx bxs-sun"></i></span>
-                <span class="text-center">7</span>
               </div>
             </div>
           </div>
