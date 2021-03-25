@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div
+        class="search-box d-flex flex-column justify-content-center align-items-center my-4"
+      >
+        <div class="card-box" id="hideAll">
+          <form id="form" class="">
+            <input
+              type="search"
+              name="citySearch"
+              id="citySearch"
+              class="city-search"
+              placeholder="Search your city"
+            />
+            <p class="error-text text-danger my-2"></p>
+          </form>
+          <div class="weather-wrapper">
+            <div class="weather-card text-white shadow-lg">
+              <div class="d-flex justify-content-end mb-0 change-box"></div>
+              <div class="pb-3 px-3">
+                <div class="mb-4 d-flex justify-content-between">
+                  <div class="d-flex flex-column">
+                    <h1 class="pl-2 font-weight-bold city-name"></h1>
+                    <span class="current-time"></span>
+                  </div>
+                  <span class="today-icon justify-content-end"></span>
+                </div>
+                <h1 class="mb-0 font-weight-bold display-3 city-degree"></h1>
+                <h2
+                  class="my-2 font-weight-bold city-weather text-capitalize"
+                ></h2>
+                <div class="d-flex p-4 justify-content-between condation-box">
+                  <div class="text-center mx-3">
+                    <h4 class="wind-title"></h4>
+                    <h3 class="font-weight-bolder wind-speed"></h3>
+                    <h4 class="wind-mes"></h4>
+                  </div>
+                  <div class="text-center mx-3">
+                    <h4 class="humadity-title"></h4>
+                    <h3 class="font-weight-bolder humadity"></h3>
+                    <h4 class="humadity-mes"></h4>
+                  </div>
+                  <div class="text-center">
+                    <h4 class="pressure-title"></h4>
+                    <h3 class="font-weight-bolder pressure"></h3>
+                    <h4 class="pressure-mes"></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

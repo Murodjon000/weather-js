@@ -4,12 +4,11 @@
 }
 body {
   background: linear-gradient(
-      to right,
-      rgba(67, 66, 66, 0.5),
-      rgba(200, 200, 200, 0.5),
-      rgba(67, 66, 66, 0.5)
-    ),
-    url("./cloud.png");
+    to right,
+    rgba(67, 66, 66, 0.5),
+    rgba(200, 200, 200, 0.5),
+    rgba(67, 66, 66, 0.5)
+  );
   font-family: "B612", sans-serif;
 }
 
@@ -21,11 +20,8 @@ body {
   outline: none;
 }
 
-.icon-weather {
-}
-
 .weather-card {
-  background-image: url("./rainy-day.jpg");
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
   width: 470px;
   height: 430px;
   opacity: 0.8;
