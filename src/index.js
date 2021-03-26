@@ -22,9 +22,6 @@ searchForm.addEventListener('submit', (e) => {
     .then((data) => {
       forecastUpdate(data);
     })
-    .catch((err) => {
-      document.querySelector('.error-text').textContent = err.message;
-    });
 });
 
 window.onload = async () => {
@@ -39,7 +36,5 @@ window.onload = async () => {
     .then((data) => {
       forecastUpdate(data);
     })
-    .catch((err) => {
-      document.querySelector('.error-text').textContent = err.message;
-    });
+
 };
