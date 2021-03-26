@@ -84,6 +84,12 @@ const weatherUpdate = async (data, units) => {
 
 const forecastUpdateStyle = (forecast) => {
   const forecastBox = document.querySelector('.forecast-box');
+  const today = new Date();
+  const tomorrow = new Date();
+  tomorrow.setDate(new Date().getDate()+1);
+  const todayWeek = today.toLocaleString('en-Us',{weekday:'long'});
+  const tomorrowWeek = tomorrow.toLocaleString('en-Us',{weekday:'long'});
+  
   forecastBox.innerHTML = '';
   for (let i = 0; i < forecast.length; i += 1) {
     const oneDay = document.createElement('div');
@@ -94,8 +100,9 @@ const forecastUpdateStyle = (forecast) => {
       weekday: 'long',
     };
     const weekDay = element.des_weekday.toLocaleString('en-US', options);
+    const weekDays= todayWeek === weekDay ? 'Today' : tomorrowWeek === weekDay ? 'Tomorrow' : weekDay
     oneDay.innerHTML = `
-    <p class='text-center mb-0'>${weekDay}</p>
+    <p class='text-center mb-0'>${weekDays}</p>
     <img src="https://openweathermap.org/img/wn/${element.weather_icon}.png" class="text-center" alt="weather-icon">
     <p class='text-center mb-0 city-deg'>${element.temperature}&deg</p>
     `;
